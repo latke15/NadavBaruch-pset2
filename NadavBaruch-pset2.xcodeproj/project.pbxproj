@@ -12,6 +12,14 @@
 		021000D31DD0AFE500DD5780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021000D11DD0AFE500DD5780 /* Main.storyboard */; };
 		021000D51DD0AFE500DD5780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021000D41DD0AFE500DD5780 /* Assets.xcassets */; };
 		021000D81DD0AFE500DD5780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021000D61DD0AFE500DD5780 /* LaunchScreen.storyboard */; };
+		02436ABC1DD0B73F00E76477 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02436ABB1DD0B73F00E76477 /* Story.swift */; };
+		02436ABE1DD0E0AF00E76477 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02436ABD1DD0E0AF00E76477 /* SecondViewController.swift */; };
+		02436AC01DD1DD4D00E76477 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02436ABF1DD1DD4D00E76477 /* ThirdViewController.swift */; };
+		02436AC61DD1E47100E76477 /* madlib0_simple.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02436AC11DD1E47100E76477 /* madlib0_simple.txt */; };
+		02436AC71DD1E47100E76477 /* madlib1_tarzan.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02436AC21DD1E47100E76477 /* madlib1_tarzan.txt */; };
+		02436AC81DD1E47100E76477 /* madlib2_university.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02436AC31DD1E47100E76477 /* madlib2_university.txt */; };
+		02436AC91DD1E47100E76477 /* madlib3_clothes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02436AC41DD1E47100E76477 /* madlib3_clothes.txt */; };
+		02436ACA1DD1E47100E76477 /* madlib4_dance.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02436AC51DD1E47100E76477 /* madlib4_dance.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		021000D41DD0AFE500DD5780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021000D71DD0AFE500DD5780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021000D91DD0AFE500DD5780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02436ABB1DD0B73F00E76477 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		02436ABD1DD0E0AF00E76477 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		02436ABF1DD1DD4D00E76477 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		02436AC11DD1E47100E76477 /* madlib0_simple.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib0_simple.txt; sourceTree = "<group>"; };
+		02436AC21DD1E47100E76477 /* madlib1_tarzan.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib1_tarzan.txt; sourceTree = "<group>"; };
+		02436AC31DD1E47100E76477 /* madlib2_university.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib2_university.txt; sourceTree = "<group>"; };
+		02436AC41DD1E47100E76477 /* madlib3_clothes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib3_clothes.txt; sourceTree = "<group>"; };
+		02436AC51DD1E47100E76477 /* madlib4_dance.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib4_dance.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,14 @@
 			children = (
 				021000CD1DD0AFE500DD5780 /* AppDelegate.swift */,
 				021000CF1DD0AFE500DD5780 /* ViewController.swift */,
+				02436ABD1DD0E0AF00E76477 /* SecondViewController.swift */,
+				02436ABF1DD1DD4D00E76477 /* ThirdViewController.swift */,
+				02436ABB1DD0B73F00E76477 /* Story.swift */,
+				02436AC11DD1E47100E76477 /* madlib0_simple.txt */,
+				02436AC21DD1E47100E76477 /* madlib1_tarzan.txt */,
+				02436AC31DD1E47100E76477 /* madlib2_university.txt */,
+				02436AC41DD1E47100E76477 /* madlib3_clothes.txt */,
+				02436AC51DD1E47100E76477 /* madlib4_dance.txt */,
 				021000D11DD0AFE500DD5780 /* Main.storyboard */,
 				021000D41DD0AFE500DD5780 /* Assets.xcassets */,
 				021000D61DD0AFE500DD5780 /* LaunchScreen.storyboard */,
@@ -125,7 +149,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				021000D81DD0AFE500DD5780 /* LaunchScreen.storyboard in Resources */,
+				02436AC91DD1E47100E76477 /* madlib3_clothes.txt in Resources */,
+				02436AC71DD1E47100E76477 /* madlib1_tarzan.txt in Resources */,
 				021000D51DD0AFE500DD5780 /* Assets.xcassets in Resources */,
+				02436AC61DD1E47100E76477 /* madlib0_simple.txt in Resources */,
+				02436AC81DD1E47100E76477 /* madlib2_university.txt in Resources */,
+				02436ACA1DD1E47100E76477 /* madlib4_dance.txt in Resources */,
 				021000D31DD0AFE500DD5780 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02436ABE1DD0E0AF00E76477 /* SecondViewController.swift in Sources */,
 				021000D01DD0AFE500DD5780 /* ViewController.swift in Sources */,
+				02436AC01DD1DD4D00E76477 /* ThirdViewController.swift in Sources */,
 				021000CE1DD0AFE500DD5780 /* AppDelegate.swift in Sources */,
+				02436ABC1DD0B73F00E76477 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +334,7 @@
 				021000DE1DD0AFE500DD5780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

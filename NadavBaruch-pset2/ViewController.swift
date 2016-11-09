@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+        // A function that loads a text file and stores it into a string
+        func loadText() -> String {
+            var contents = String()
+            if let filepath = Bundle.main.path(forResource: "madlib0_simple", ofType: "txt")
+            {
+                do {
+                    contents = try String(contentsOfFile: filepath)
+                } catch {
+                    // contents could not be loaded
+                }
+            } else {
+                // example.txt not found!
+            }
+            return contents
+        }
+        
+    // A variable to store the story in
+    var text = String()
+        // segue contents to the rawtext variable in the the next view
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            text = loadText()
+            if let destination: SecondViewController = (segue.destination as? SecondViewController){
+            destination.rawText = text
+            }
+        }
 }
-
