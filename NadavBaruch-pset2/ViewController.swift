@@ -37,9 +37,9 @@ class ViewController: UIViewController {
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             text = loadText()
             if let destination: SecondViewController = (segue.destination as? SecondViewController){
-                destination.rawText = text
-                let destination1: ThirdViewController = (segue.destination as? ThirdViewController)!
+                destination.rawText = text}
+            if let destination1: ThirdViewController = (segue.destination as? ThirdViewController)!{
                 destination1.rawText = text
             }
-        }
+    }
 }
