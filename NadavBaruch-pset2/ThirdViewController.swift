@@ -15,8 +15,7 @@ class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        storyMaker = Story(stream: rawText!)
-    StoryText.text = String(storyMaker.toString())
+    StoryText.text = rawText
     }
 
     override func didReceiveMemoryWarning() {

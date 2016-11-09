@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // A variable to store the story in
+    var text = String()
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -30,16 +33,11 @@ class ViewController: UIViewController {
             }
             return contents
         }
-        
-    // A variable to store the story in
-    var text = String()
+
         // segue contents to the rawtext variable in the the next view
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             text = loadText()
             if let destination: SecondViewController = (segue.destination as? SecondViewController){
                 destination.rawText = text}
-            if let destination1: ThirdViewController = (segue.destination as? ThirdViewController)!{
-                destination1.rawText = text
-            }
     }
 }

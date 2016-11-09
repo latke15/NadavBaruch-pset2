@@ -12,16 +12,16 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var Button: UIButton!
     @IBOutlet weak var inputField: UITextField!
-    var rawText: String?
-    var storyMaker = Story(stream: String())
     @IBOutlet weak var wordtypeLabel: UILabel!
     @IBOutlet weak var wordsLeft: UILabel!
+    var rawText = String()
+    var storyMaker = Story(stream: String())
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        storyMaker = Story(stream: rawText!)
-        wordtypeLabel.text = "Fill in a " + String(storyMaker.getNextPlaceholder())
-        wordsLeft.text = String(storyMaker.getPlaceholderRemainingCount()) + " " + "words left to fill in"
+        storyMaker = Story(stream: rawText)
+        wordtypeLabel.text = "Fill in a " + storyMaker.getNextPlaceholder()
+        wordsLeft.text = String(storyMaker.getPlaceholderRemainingCount()) + " words left to fill in"
         
         // Do any additional setup after loading the view.
     }
@@ -31,15 +31,20 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func Fillin(_ sender: Any) {
+        storyMaker.fillInPlaceholder(word: inputField.text!)
+        wordtypeLabel.text = "Fill in a " + storyMaker.getNextPlaceholder()
+        wordsLeft.text = String(storyMaker.getPlaceholderRemainingCount()) + " words left to fill in"
+        inputField.text = nil
         if storyMaker.getPlaceholderRemainingCount() == 0
         {
             self.performSegue(withIdentifier: "Segue23", sender: nil)
         }
-        else{
-        storyMaker.fillInPlaceholder(word: inputField.text!)
     }
-}
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        rawText = storyMaker.toString()
+        let destination1 = segue.destination as! ThirdViewController
+        destination1.rawText = rawText
+    }
     /*
     // MARK: - Navigation
 
@@ -49,4 +54,4 @@ class SecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    }
+}
