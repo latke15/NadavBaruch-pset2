@@ -19,35 +19,35 @@
                         <viewControllerLayoutGuide type="bottom" id="lOe-oY-ijr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="PyE-Hs-grh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GR1-2J-0wE">
-                                <rect key="frame" x="0.0" y="60" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YHH-5K-bG4">
-                                        <rect key="frame" x="47" y="0.0" width="282" height="282"/>
+                                        <rect key="frame" x="46.5" y="0.0" width="282" height="303.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madlibs" translatesAutoresizingMaskIntoConstraints="NO" id="2LK-4v-iwD">
-                                                <rect key="frame" x="0.0" y="0.0" width="282" height="282"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="282" height="303.5"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-6e-EbM">
-                                        <rect key="frame" x="28" y="282" width="320" height="281"/>
+                                        <rect key="frame" x="27.5" y="303.5" width="320" height="303.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fcc-GV-XAh">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="303.5"/>
                                                 <subviews>
                                                     <pickerView contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="ZJS-yA-RWq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="270.5"/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="aRM-jw-kXh"/>
                                                             <outlet property="delegate" destination="BYZ-38-t0r" id="Ghp-4M-h9M"/>
                                                         </connections>
                                                     </pickerView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUV-ba-KiR">
-                                                        <rect key="frame" x="0.0" y="248" width="320" height="33"/>
+                                                        <rect key="frame" x="0.0" y="270.5" width="320" height="33"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <state key="normal" title="Let's Get Started!">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,11 +93,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ETa-Bl-kDl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QuO-KV-27r">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4NR-K5-zZY">
-                                <rect key="frame" x="97" y="124" width="181" height="30"/>
+                                <rect key="frame" x="97" y="80" width="181" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
@@ -109,8 +109,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdw-yV-hLH">
-                                <rect key="frame" x="164" y="189" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="166.5" y="145" width="41" height="30"/>
+                                <state key="normal" title="Enter!"/>
                                 <connections>
                                     <action selector="Fillin:" destination="zHt-Jj-VTc" eventType="touchUpInside" id="XER-m7-1jW"/>
                                 </connections>
@@ -148,16 +148,24 @@
                         <viewControllerLayoutGuide type="bottom" id="KmC-Ay-iTA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yAg-X5-umE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uCv-Xa-fRf">
-                                <rect key="frame" x="0.0" y="72" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="631"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6K-Fe-Ygc">
+                                <rect key="frame" x="120" y="573" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Make a new story!"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="N5j-He-nKU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -170,6 +178,7 @@
                     <navigationItem key="navigationItem" title="The story" id="jk4-1g-R33"/>
                     <connections>
                         <outlet property="StoryText" destination="uCv-Xa-fRf" id="1vL-Yn-tcS"/>
+                        <outlet property="againButton" destination="d6K-Fe-Ygc" id="iD7-iF-qJn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSB-Pd-r1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,4 +207,7 @@
     <resources>
         <image name="madlibs" width="282" height="308"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="N5j-He-nKU"/>
+    </inferredMetricsTieBreakers>
 </document>
