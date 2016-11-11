@@ -32,8 +32,8 @@ class SecondViewController: UIViewController {
     }
     @IBAction func Fillin(_ sender: Any) {
         if inputField.text!.isEmpty{
-            let alert = UIAlertController(title: "Alert", message: "You didn't type in a word!", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Alert!", message: "You didn't type in a word!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Understood!", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             }
         if !inputField.text!.isEmpty{
