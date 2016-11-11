@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--bhb-->
+        <!--MadLibs-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NadavBaruch_pset2" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,13 +68,13 @@
                             <constraint firstItem="lOe-oY-ijr" firstAttribute="top" secondItem="GR1-2J-0wE" secondAttribute="bottom" id="ouN-am-fJD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="bhb" id="Z8q-lN-mf5"/>
+                    <navigationItem key="navigationItem" title="MadLibs" id="Z8q-lN-mf5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2792.8000000000002" y="35.532233883058474"/>
         </scene>
-        <!--jnjn-->
+        <!--Fill the words in-->
         <scene sceneID="jbc-iw-laU">
             <objects>
                 <viewController id="zHt-Jj-VTc" customClass="SecondViewController" customModule="NadavBaruch_pset2" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,7 +126,7 @@
                             <constraint firstItem="LNn-QF-EzZ" firstAttribute="leading" secondItem="QuO-KV-27r" secondAttribute="leadingMargin" constant="85" id="vpu-q8-lCH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="jnjn" id="Ur9-mD-fu4"/>
+                    <navigationItem key="navigationItem" title="Fill the words in" id="Ur9-mD-fu4"/>
                     <connections>
                         <outlet property="Button" destination="tdw-yV-hLH" id="qsN-wg-2O1"/>
                         <outlet property="inputField" destination="4NR-K5-zZY" id="FeE-Ny-qCF"/>
@@ -139,7 +139,7 @@
             </objects>
             <point key="canvasLocation" x="3517.5999999999999" y="36.431784107946029"/>
         </scene>
-        <!--Third View Controller-->
+        <!--The story-->
         <scene sceneID="TZx-PD-wSC">
             <objects>
                 <viewController id="L2y-MD-scS" customClass="ThirdViewController" customModule="NadavBaruch_pset2" customModuleProvider="target" sceneMemberID="viewController">
@@ -167,6 +167,7 @@
                             <constraint firstAttribute="trailing" secondItem="uCv-Xa-fRf" secondAttribute="trailing" id="yCe-c1-iDx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="The story" id="jk4-1g-R33"/>
                     <connections>
                         <outlet property="StoryText" destination="uCv-Xa-fRf" id="1vL-Yn-tcS"/>
                     </connections>
