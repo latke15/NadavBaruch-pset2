@@ -31,10 +31,17 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func Fillin(_ sender: Any) {
+        if inputField.text!.isEmpty{
+            let alert = UIAlertController(title: "Alert", message: "You didn't type in a word!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            }
+        if !inputField.text!.isEmpty{
         storyMaker.fillInPlaceholder(word: inputField.text!)
         wordsLeft.text = String(storyMaker.getPlaceholderRemainingCount()) + " words left to fill in"
         inputField.placeholder = "Fill in a " + storyMaker.getNextPlaceholder()
         inputField.text = nil
+        }
         if storyMaker.getPlaceholderRemainingCount() == 0
         {
             self.performSegue(withIdentifier: "Segue23", sender: nil)

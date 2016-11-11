@@ -28,7 +28,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Dispose of any resources that can be recreated.
     }
     
-    // A function that loads a text file and stores it into a string
+    /// A function that loads a text file and stores it into a string
     func loadText() -> String {
         var contents = String()
         if let filepath = Bundle.main.path(forResource: picked, ofType: "txt")
@@ -36,13 +36,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             do {
                 contents = try String(contentsOfFile: filepath)
             } catch {
-                // contents could not be loaded
+                print(error)
             }
         } else {
             // example.txt not found!
         }
         return contents
     }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -55,6 +56,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         picked = stories[row]
     }
+    
         // segue contents to the rawtext variable in the the next view
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             text = loadText()
