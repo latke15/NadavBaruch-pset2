@@ -12,8 +12,6 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var StoryText: UITextView!
     var rawText: String?
     var storyMaker = Story(stream: String())
-    @IBOutlet weak var againButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     StoryText.text = rawText
