@@ -20,6 +20,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         storyMaker = Story(stream: rawText)
+        inputField.placeholder = "Fill in a " + storyMaker.getNextPlaceholder()
         wordtypeLabel.text = "Fill in a " + storyMaker.getNextPlaceholder()
         wordsLeft.text = String(storyMaker.getPlaceholderRemainingCount()) + " words left to fill in"
         

@@ -8,32 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     
     // A variable to store the story in
     var text = String()
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-        // A function that loads a text file and stores it into a string
-        func loadText() -> String {
-            var contents = String()
-            if let filepath = Bundle.main.path(forResource: "madlib0_simple", ofType: "txt")
-            {
-                do {
-                    contents = try String(contentsOfFile: filepath)
-                } catch {
-                    // contents could not be loaded
-                }
-            } else {
-                // example.txt not found!
+    
+    // A function that loads a text file and stores it into a string
+    func loadText() -> String {
+        var contents = String()
+        if let filepath = Bundle.main.path(forResource: "madlib1_tarzan", ofType: "txt")
+        {
+            do {
+                contents = try String(contentsOfFile: filepath)
+            } catch {
+                // contents could not be loaded
             }
-            return contents
+        } else {
+            // example.txt not found!
         }
-
+        return contents
+    }
+    
         // segue contents to the rawtext variable in the the next view
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             text = loadText()
