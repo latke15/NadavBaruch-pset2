@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController{
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
+    @IBOutlet weak var pickerView: UIPickerView!
     
     // A variable to store the story in
     var text = String()
+    var stories = ["madlib0_simple", "madlib1_tarzan", "madlib2_university", "madlib3_clothes", "madlib4_dance"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pickerView.delegate = self
+        pickerView.dataSource = self
         
     }
     override func didReceiveMemoryWarning() {
@@ -25,7 +29,7 @@ class ViewController: UIViewController{
     // A function that loads a text file and stores it into a string
     func loadText() -> String {
         var contents = String()
-        if let filepath = Bundle.main.path(forResource: "madlib1_tarzan", ofType: "txt")
+        if let filepath = Bundle.main.path(forResource: "madlib0_simple", ofType: "txt")
         {
             do {
                 contents = try String(contentsOfFile: filepath)
@@ -37,7 +41,18 @@ class ViewController: UIViewController{
         }
         return contents
     }
-    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return stories.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return stories[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //var picked = stories[row]
+    }
         // segue contents to the rawtext variable in the the next view
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             text = loadText()

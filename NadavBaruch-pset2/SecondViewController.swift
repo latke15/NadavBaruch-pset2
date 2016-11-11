@@ -21,7 +21,6 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         storyMaker = Story(stream: rawText)
         inputField.placeholder = "Fill in a " + storyMaker.getNextPlaceholder()
-        wordtypeLabel.text = "Fill in a " + storyMaker.getNextPlaceholder()
         wordsLeft.text = String(storyMaker.getPlaceholderRemainingCount()) + " words left to fill in"
         
         // Do any additional setup after loading the view.
@@ -33,8 +32,8 @@ class SecondViewController: UIViewController {
     }
     @IBAction func Fillin(_ sender: Any) {
         storyMaker.fillInPlaceholder(word: inputField.text!)
-        wordtypeLabel.text = "Fill in a " + storyMaker.getNextPlaceholder()
         wordsLeft.text = String(storyMaker.getPlaceholderRemainingCount()) + " words left to fill in"
+        inputField.placeholder = "Fill in a " + storyMaker.getNextPlaceholder()
         inputField.text = nil
         if storyMaker.getPlaceholderRemainingCount() == 0
         {
