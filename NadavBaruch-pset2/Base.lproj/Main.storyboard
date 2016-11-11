@@ -115,12 +115,6 @@
                                     <action selector="Fillin:" destination="zHt-Jj-VTc" eventType="touchUpInside" id="XER-m7-1jW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNn-QF-EzZ">
-                                <rect key="frame" x="101" y="227" width="173" height="0.0"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -128,12 +122,9 @@
                             <constraint firstItem="4NR-K5-zZY" firstAttribute="leading" secondItem="QuO-KV-27r" secondAttribute="leadingMargin" constant="81" id="Bf4-4g-q2C"/>
                             <constraint firstItem="tdw-yV-hLH" firstAttribute="top" secondItem="4NR-K5-zZY" secondAttribute="bottom" constant="35" id="DVq-GM-UPV"/>
                             <constraint firstItem="tdw-yV-hLH" firstAttribute="centerX" secondItem="QuO-KV-27r" secondAttribute="centerX" id="Ixy-1s-HT8"/>
-                            <constraint firstItem="LNn-QF-EzZ" firstAttribute="top" secondItem="tdw-yV-hLH" secondAttribute="bottom" constant="8" symbolic="YES" id="KUE-QD-LZu"/>
                             <constraint firstItem="4NR-K5-zZY" firstAttribute="top" secondItem="8nw-Vz-r3a" secondAttribute="bottom" constant="60" id="Pvs-tE-1dC"/>
                             <constraint firstItem="jti-89-EH9" firstAttribute="centerX" secondItem="4NR-K5-zZY" secondAttribute="centerX" id="TAh-8O-vyS"/>
-                            <constraint firstItem="tdw-yV-hLH" firstAttribute="centerX" secondItem="LNn-QF-EzZ" secondAttribute="centerX" id="ZcQ-W5-PeL"/>
                             <constraint firstItem="jti-89-EH9" firstAttribute="top" secondItem="QuO-KV-27r" secondAttribute="top" constant="80" id="jIu-zY-eFz"/>
-                            <constraint firstItem="LNn-QF-EzZ" firstAttribute="leading" secondItem="QuO-KV-27r" secondAttribute="leadingMargin" constant="85" id="vpu-q8-lCH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fill the words in" id="Ur9-mD-fu4"/>
@@ -141,7 +132,6 @@
                         <outlet property="Button" destination="tdw-yV-hLH" id="qsN-wg-2O1"/>
                         <outlet property="inputField" destination="4NR-K5-zZY" id="FeE-Ny-qCF"/>
                         <outlet property="wordsLeft" destination="jti-89-EH9" id="cQf-qp-ZNi"/>
-                        <outlet property="wordtypeLabel" destination="LNn-QF-EzZ" id="POJ-4g-fhT"/>
                         <segue destination="L2y-MD-scS" kind="show" identifier="Segue23" id="SXX-Xo-7q9"/>
                     </connections>
                 </viewController>
