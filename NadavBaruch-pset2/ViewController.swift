@@ -12,7 +12,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var pickerView: UIPickerView!
     
     // A variable to store the story in
-    var text = String()
     var stories = ["madlib0_simple", "madlib1_tarzan", "madlib2_university", "madlib3_clothes", "madlib4_dance"]
     var titles = ["Simple", "Tarzan", "University", "Clothes", "Dance"]
     var picked = ""
@@ -59,8 +58,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
         // segue contents to the rawtext variable in the the next view
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            text = loadText()
             if let destination: SecondViewController = (segue.destination as? SecondViewController){
-                destination.rawText = text}
+                destination.rawText = loadText()}
     }
 }

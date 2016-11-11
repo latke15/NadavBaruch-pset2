@@ -12,7 +12,6 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var Button: UIButton!
     @IBOutlet weak var inputField: UITextField!
-    @IBOutlet weak var wordtypeLabel: UILabel!
     @IBOutlet weak var wordsLeft: UILabel!
     var rawText = String()
     var storyMaker = Story(stream: String())
