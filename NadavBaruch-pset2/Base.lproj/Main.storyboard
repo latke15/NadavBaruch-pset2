@@ -158,9 +158,8 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6K-Fe-Ygc">
-                                <rect key="frame" x="120" y="573" width="135" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6K-Fe-Ygc">
+                                <rect key="frame" x="104" y="474" width="167" height="30"/>
                                 <state key="normal" title="Make a new story!"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="N5j-He-nKU"/>
@@ -169,10 +168,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="d6K-Fe-Ygc" firstAttribute="leading" secondItem="yAg-X5-umE" secondAttribute="leading" constant="104" id="1sw-ca-zUN"/>
+                            <constraint firstItem="KmC-Ay-iTA" firstAttribute="top" secondItem="d6K-Fe-Ygc" secondAttribute="bottom" constant="163" id="Ckb-UM-bub"/>
                             <constraint firstItem="uCv-Xa-fRf" firstAttribute="leading" secondItem="yAg-X5-umE" secondAttribute="leading" id="Dyv-kD-yG0"/>
+                            <constraint firstAttribute="trailing" secondItem="d6K-Fe-Ygc" secondAttribute="trailing" constant="104" id="X1h-g6-9VR"/>
                             <constraint firstItem="KmC-Ay-iTA" firstAttribute="top" secondItem="uCv-Xa-fRf" secondAttribute="bottom" constant="8" id="eG6-sG-eZv"/>
                             <constraint firstItem="uCv-Xa-fRf" firstAttribute="top" secondItem="xfp-VY-FeT" secondAttribute="bottom" constant="8" id="wdD-WR-z7m"/>
                             <constraint firstAttribute="trailing" secondItem="uCv-Xa-fRf" secondAttribute="trailing" id="yCe-c1-iDx"/>
+                            <constraint firstItem="d6K-Fe-Ygc" firstAttribute="top" secondItem="xfp-VY-FeT" secondAttribute="bottom" constant="454" id="yoB-YG-VQn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="The story" id="jk4-1g-R33"/>
